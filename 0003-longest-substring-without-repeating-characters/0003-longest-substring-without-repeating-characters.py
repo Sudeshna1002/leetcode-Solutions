@@ -1,6 +1,6 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-            sett=[]
+            sett=set()
             result=0
             l=0
             r=0
@@ -8,6 +8,6 @@ class Solution:
                 while s[r] in sett:
                     sett.remove(s[l])
                     l=l+1
-                sett.append(s[r])
+                sett.add(s[r])
                 result=max(result,r-l+1)
             return result
