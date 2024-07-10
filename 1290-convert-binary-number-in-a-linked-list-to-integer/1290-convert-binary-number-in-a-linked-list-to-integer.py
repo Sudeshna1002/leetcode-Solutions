@@ -7,9 +7,7 @@ class Solution:
     def getDecimalValue(self, head: ListNode) -> int:
         arr=[]
         sum=0
-        
-    
-        
+           
         while head:
             arr.append(head.val)
             head=head.next
