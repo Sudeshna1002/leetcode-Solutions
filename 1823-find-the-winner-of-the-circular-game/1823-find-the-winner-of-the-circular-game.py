@@ -5,12 +5,10 @@ class Solution:
             arr.append(i)
         index=0
         while len(arr)!=1:
-            
                 index=index+k-1
-           
                 while index>=len(arr):  
                   index=index-len(arr)
-                arr.pop(index)
+                arr.remove(arr[index])
         return arr[0]
                 
             
